@@ -1,0 +1,51 @@
+#content {
+  -fx-padding: 10px;
+  -fx-pref-width: 300px;
+  -fx-alignment: bottom-center;
+  -fx-spacing: 10px;
+}
+
+.menu-bar {
+  -fx-use-system-menu-bar: true;
+  -fx-padding: 0px 5px 1px 5px;
+}
+
+.menu, .menu-item {
+  -fx-padding: 2px 10px 2px 10px;
+}
+
+.list-view {
+  -fx-fill-width: true;
+  -fx-pref-height: 245px;
+  -fx-border-color: #C0C0C0;
+}
+
+.list-cell {
+  -fx-padding: 0;
+  -fx-background-color: transparent;
+}
+
+.roll {
+  -fx-spacing: 10px;
+  -fx-padding: 5px 0 5px 50px;
+}
+
+.roll Text {
+  -fx-font-size: 20px;
+  -fx-font-weight: bold;
+}
+
+.win {
+  -fx-background-color: rgba(0, 255, 0, 0.05);
+  -fx-border-color: #C0C0C0;
+}
+
+.loss {
+  -fx-background-color: rgba(255, 0, 0, 0.05);
+  -fx-border-color: #C0C0C0;
+}
+
+.point {
+  -fx-background-color: rgba(0, 0, 0, 0.05);
+  -fx-border-color: #C0C0C0;
+}

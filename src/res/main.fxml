@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.text.Text?>
+<VBox
+  xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="edu.cnm.deepdive.craps.controller.Controller"
+  prefHeight="400.0" prefWidth="600.0">
+
+  <stylesheets>
+    <URL value="@styles.css"/>
+  </stylesheets>
+
+  <MenuBar>
+    <Menu text="%menu_title">
+      <MenuItem
+        fx:id="next"
+        text="%next_title"
+        onAction="#next"/>
+      <MenuItem
+        fx:id="fast"
+        text="%fast_title"
+        onAction="#fast"/>
+      <MenuItem
+        fx:id="pause"
+        text="%pause_title"
+        onAction="#pause"/>
+      <SeparatorMenuItem/>
+      <MenuItem
+        fx:id="reset"
+        text="%reset_title"
+        onAction="#reset"/>
+    </Menu>
+  </MenuBar>
+
+  <VBox
+    fx:id="content">
+
+    <ListView
+      fx:id="rolls"/>
+
+    <Text
+      fx:id="tally"
+      text="%tally_format"/>
+
+  </VBox>
+</VBox>
