@@ -125,6 +125,7 @@ public class Controller {
           int losses = game.getLosses();
           Platform.runLater(() -> updateTally(wins, losses));
         }
+
         if (count % ROLLS_UPDATE_INTERVAL == 0) {
           List<Roll> rolls = game.getRolls();
           Platform.runLater(() -> updateRolls(rolls));
@@ -133,6 +134,7 @@ public class Controller {
       int wins = game.getWins();
       int losses = game.getLosses();
       List<Roll> rolls = game.getRolls();
+
       Platform.runLater(() -> {
         updateTally(wins, losses);
         updateRolls(rolls);
@@ -140,5 +142,4 @@ public class Controller {
       });
     }
   }
-
 }
