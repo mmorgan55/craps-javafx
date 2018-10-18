@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.HBox?>
+<?import java.net.URL?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<HBox
+  xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  styleClass="roll">
+
+  <stylesheets>
+    <URL value="@styles.css"/>
+  </stylesheets>
+
+  <ImageView
+    fx:id="die0"
+    fitWidth="38"
+    fitHeight="38"/>
+
+  <ImageView
+    fx:id="die1"
+    fitWidth="38"
+    fitHeight="38"/>
+
+  <Text
+    fx:id="total"
+    text="%total_format"/>
+</HBox>

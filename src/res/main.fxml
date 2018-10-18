@@ -9,11 +9,11 @@
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.input.KeyCharacterCombination?>
 <VBox
   xmlns="http://javafx.com/javafx"
   xmlns:fx="http://javafx.com/fxml"
-  fx:controller="edu.cnm.deepdive.craps.controller.Controller"
-  prefHeight="400.0" prefWidth="600.0">
+  fx:controller="edu.cnm.deepdive.craps.controller.Controller">
 
   <stylesheets>
     <URL value="@styles.css"/>
@@ -24,20 +24,60 @@
       <MenuItem
         fx:id="next"
         text="%next_title"
-        onAction="#next"/>
+        onAction="#next">
+        <accelerator>
+          <KeyCharacterCombination
+          alt="UP"
+          shift="ANY"
+          control="DOWN"
+          meta="UP"
+          shortcut="UP"
+          character="%next_character"/>
+        </accelerator>
+      </MenuItem>
       <MenuItem
         fx:id="fast"
         text="%fast_title"
-        onAction="#fast"/>
+        onAction="#fast">
+        <accelerator>
+          <KeyCharacterCombination
+            alt="UP"
+            shift="ANY"
+            control="DOWN"
+            meta="UP"
+            shortcut="UP"
+            character="%fast_character"/>
+        </accelerator>
+      </MenuItem>
       <MenuItem
         fx:id="pause"
         text="%pause_title"
-        onAction="#pause"/>
+        onAction="#pause">
+        <accelerator>
+          <KeyCharacterCombination
+            alt="UP"
+            shift="ANY"
+            control="DOWN"
+            meta="UP"
+            shortcut="UP"
+            character="%pause_character"/>
+        </accelerator>
+      </MenuItem>
       <SeparatorMenuItem/>
       <MenuItem
         fx:id="reset"
         text="%reset_title"
-        onAction="#reset"/>
+        onAction="#reset">
+        <accelerator>
+          <KeyCharacterCombination
+            alt="UP"
+            shift="ANY"
+            control="DOWN"
+            meta="UP"
+            shortcut="UP"
+            character="%reset_character"/>
+        </accelerator>
+      </MenuItem>
     </Menu>
   </MenuBar>
 
