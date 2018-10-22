@@ -14,6 +14,9 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.MenuItem;
 import javafx.scene.text.Text;
 
+/**
+ * Creates and controls the state of the game in UI thread and the background thread.
+ */
 public class Controller {
 
   private static final String WIN_KEY = "win";
@@ -75,6 +78,9 @@ public class Controller {
     updateRolls(game.getRolls());
   }
 
+  /**
+   * Stops the game from going fast if that option has been selected.
+   */
   public void stop() {
     pause(null);
   }
@@ -109,6 +115,10 @@ public class Controller {
     reset.setDisable(running);
   }
 
+  /**
+   * Updates the UI thread and the background thread as the game is being
+   * played. Controls the UI thread if the game is running fast.
+   */
   private class Runner extends Thread {
 
     private static final int TALLY_UPDATE_INTERVAL = 2000;

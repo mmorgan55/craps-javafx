@@ -10,6 +10,10 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+/**
+ * Controls the view of the Game as it is played. Determines the resources
+ * to load into the game for it to be played, such as the GUI.
+ */
 public class Main extends Application {
 
   private static final String RESOURCE_PATH = "res/ui";

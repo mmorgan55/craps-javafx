@@ -11,6 +11,9 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
+/**
+ * Class that creates the Images of the dice after a roll has been completed.
+ */
 public class RollCell extends ListCell<Roll> {
 
   private static final String ROLL_RESOURCE = "res/roll.fxml";
@@ -42,6 +45,10 @@ public class RollCell extends ListCell<Roll> {
     }
   }
 
+  /**
+   * Class that loads the images of dice faces onto Image objects to be displayed
+   * as the game is played.
+   */
   private static class Controller {
 
     private static final String DIE_FACE_FORMAT = "res/face_%d.png";
