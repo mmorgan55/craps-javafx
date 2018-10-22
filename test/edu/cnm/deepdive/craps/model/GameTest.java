@@ -32,4 +32,22 @@ class GameTest {
       }
     }
   }
+
+  @Test
+  void testPointLoss() {
+    int roll = 7;
+    int point = 6;
+    assertSame(State.LOSS, State.POINT.roll(roll, point));
+
+    roll = 12;
+    assertNotSame(State.LOSS, State.POINT.roll(roll, point));
+
+    roll = 2;
+    assertNotSame(State.LOSS, State.POINT.roll(roll, point));
+
+    roll = 3;
+    assertNotSame(State.LOSS, State.POINT.roll(roll, point));
+  }
+
+
 }
